@@ -23,6 +23,10 @@ A Kocka Játék egy egyszerű, két játékos számára készült böngészős s
 - Ionicons (ikonkészlet)
 - Google Fonts (Lato)
 
+## 🌐 Demó
+
+[Élő demó megtekintése](https://www.troy.hu/projects/projects03/)
+
 ## 🛠️ Telepítés
 
 1. Klónozd le a repozitóriumot:
