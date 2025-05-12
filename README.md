@@ -87,7 +87,7 @@ Ez a projekt [MIT](https://choosealicense.com/licenses/mit/) licensz alatt van.
 
 ## 👨‍💻 Szerző
 
-Készítette: [Neved](https://github.com/namezor90)
+Készítette: [namezor90](https://github.com/namezor90)
 
 ---
 
