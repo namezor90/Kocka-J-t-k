@@ -1,6 +1,6 @@
 # 🎲 Kocka Játék
 
-![Játék képernyő](https://raw.githubusercontent.com/namezor90/kocka-jatek/main/img/game-preview.png)
+![Játék képernyő](https://github.com/namezor90/Kocka-Jatek/blob/main/image.png)
 
 ## 📖 A játékról
 
