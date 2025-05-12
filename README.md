@@ -1,6 +1,6 @@
 # 🎲 Kocka Játék
 
-![Játék képernyő](https://github.com/namezor90/Kocka-Jatek/blob/main/image.png)
+![Játék képernyő](https://github.com/namezor90/Kocka-Jatek/blob/main/jatekfolyamat.png)
 
 ## 📖 A játékról
 
@@ -77,8 +77,8 @@ A projekt célja a DOM manipuláció és az eseménykezelés gyakorlása volt pu
 ## 📱 Képernyőképek
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/namezor90/kocka-jatek/main/screenshots/gameplay.png" alt="Játékmenet" width="45%">
-  <img src="https://raw.githubusercontent.com/namezor90/kocka-jatek/main/screenshots/winner.png" alt="Győztes képernyő" width="45%">
+  <img src="https://github.com/namezor90/Kocka-Jatek/blob/main/jatekfolyamat.png" alt="Játékmenet" width="45%">
+  <img src="https://github.com/namezor90/Kocka-Jatek/blob/main/gyozelem.png" alt="Győztes képernyő" width="45%">
 </div>
 
 ## 📜 Licensz
