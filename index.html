@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
-        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
         <link type="text/css" rel="stylesheet" href="css/style.css">
         
         <title>Kocka játék</title>
@@ -34,8 +34,25 @@
             <button class="btn-new"><i class="ion-ios-plus-outline"></i>Új játék</button>
             <button class="btn-roll"><i class="ion-ios-loop"></i>Dobás</button>
             <button class="btn-hold"><i class="ion-ios-download-outline"></i>Megtartom</button>
-            
+            <!-- Szabály gomb -->
+            <button class="btn-rules"><i class="ion-ios-help-outline"></i>Szabályok</button>
+
             <img src="img/dice-1.png" alt="Dice" class="dice">
+        </div>
+
+        <!-- Felugró szabály ablak -->
+        <div id="rules-modal" class="modal">
+            <div class="modal-content">
+                <h2>Kocka Játék Szabályok</h2>
+                <div class="rules-text">
+                    <p>- A játék 2 szereplős és körökre osztott</p>
+                    <p>- Minden egyes körben az adott játékos dob a kockával, ahányszor csak szeretne. A dobások eredménye hozzáadódik a játékos adott körben elért pontszámához.</p>
+                    <p>- Ha az aktuális játékos 1-et dob, akkor az összes addigi pontja elveszik, és átadja a dobás jogát a következő játékosnak.</p>
+                    <p>- A játékos választhatja a 'Megtartom' gombot is. Ebben az esetben az adott körben elért pontok száma, hozzáadódik a játékos összes pontszámához. Majd a dobás joga a másik játékosra száll.</p>
+                    <p>- Az a játékos nyer, aki előbb eléri a 100 pontot.</p>
+                </div>
+                <button id="accept-rules" class="btn-accept">Elfogadom</button>
+            </div>
         </div>
         
         <script src="js/app.js"></script>

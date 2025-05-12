@@ -141,6 +141,7 @@ i {
 .btn-new { top: 45px;}
 .btn-roll { top: 403px;}
 .btn-hold { top: 467px;}
+.btn-rules { top: 531px;} /* Új szabály gomb elhelyezése a megtartom gomb alatt */
 
 .dice {
     position: absolute;
@@ -153,3 +154,79 @@ i {
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+/**********************************************
+*** MODAL (FELUGRÓ ABLAK)
+**********************************************/
+
+.modal {
+    display: none; /* Alapértelmezetten rejtve */
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #f7f7f7;
+    margin: 10% auto;
+    padding: 30px;
+    width: 70%;
+    max-width: 700px;
+    border-radius: 5px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.modal-content h2 {
+    color: #EB4D4D;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.rules-text {
+    text-align: left;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.rules-text p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.btn-accept {
+    position: relative;
+    width: auto;
+    display: inline-block;
+    left: unset;
+    transform: none;
+    padding: 10px 30px;
+    background-color: #EB4D4D;
+    color: white;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+
+.btn-accept:hover {
+    background-color: #af3a3a;
+    color: white;
+}
+
+/* Megjelenített modal */
+.show-modal {
+    display: block;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

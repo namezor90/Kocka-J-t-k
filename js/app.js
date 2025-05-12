@@ -15,6 +15,34 @@ var pontSzamok, korPontszam, aktivJatekos, jatekFolyamatban;
 
 init();
 
+// Modal kezelés
+var modal = document.getElementById('rules-modal');
+var btnRules = document.querySelector('.btn-rules');
+var btnAccept = document.getElementById('accept-rules');
+
+// Oldal betöltésekor mutassuk a szabály ablakot
+window.addEventListener('load', function() {
+    modal.classList.add('show-modal');
+});
+
+// Szabályok gomb esemény kezelése
+btnRules.addEventListener('click', function() {
+    modal.classList.add('show-modal');
+});
+
+// Elfogadom gomb esemény kezelése
+btnAccept.addEventListener('click', function() {
+    modal.classList.remove('show-modal');
+});
+
+// Ha a felhasználó a modal-on kívülre kattint, az is bezárja
+window.addEventListener('click', function(event) {
+    if (event.target === modal) {
+        modal.classList.remove('show-modal');
+    }
+});
+
+
 // ------------------------------------------------------------------------------------------------------------------
 // Dobás GOMB esemény kezelője.
 // ------------------------------------------------------------------------------------------------------------------
@@ -68,13 +96,8 @@ document.querySelector(".btn-hold").addEventListener("click", function() {
       document.querySelector(".player-" + aktivJatekos + "-panel").classList.remove("active");
       jatekFolyamatban = false;
     } else {
-      kovetkezoJatekos()
+      kovetkezoJatekos();
     }
-
-
-    // Következő játékos.
-    kovetkezoJatekos()
-
   }
 
 });
